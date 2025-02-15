@@ -1,0 +1,31 @@
+{
+    "percentWealth": [
+        {"maxRoll": "20", "percent": "0"},
+        {"maxRoll": "52", "percent": "0.12"},
+        {"maxRoll": "76", "percent": "0.24"},
+        {"maxRoll": "92", "percent": "0.36"},
+        {"maxRoll": "100", "percent": "0.48"}
+    ],
+    "gemsAndArt": [
+        {"maxRoll": "55", "result": "none"},
+        {"maxRoll": "78", "result": "art"},
+        {"maxRoll": "93", "result": "gems"},
+        {"maxRoll": "100", "result": "gems+art"}
+    ],
+    "items": [
+        {"maxRoll": "25", "rarity": ["mundane"]},
+        {"maxRoll": "50", "rarity": ["mundane","minor"]},
+        {"maxRoll": "75", "rarity": ["mundane","medium"]},
+        {"maxRoll": "100", "rarity": ["mundane","major"]}
+    ],
+    "gemsAndArtValue": [
+        {"maxRoll": "5", "value": "5d4", "average": "12.5"},
+        {"maxRoll": "25", "value": "2d4x5", "average": "25"},
+        {"maxRoll": "50", "value": "2d4x15", "average": "75"},
+        {"maxRoll": "70", "value": "10d4x10", "average": "250"},
+        {"maxRoll": "85", "value": "10d12x10", "average": "650"},
+        {"maxRoll": "95", "value": "5d4x100", "average": "1250"},
+        {"maxRoll": "99", "value": "5d4", "average": "2500"},
+        {"maxRoll": "100", "value": "5000", "average": "5000"}
+    ]
+}

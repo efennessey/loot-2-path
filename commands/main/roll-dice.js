@@ -21,23 +21,23 @@ function rollValue(input) {
     let prevOperator = '+';
     let operatorPosition, nextOperator;
     let totalVal = 0;
-    console.log(`rollValue: Rolling ${diceString}`);
+    //console.log(`rollValue: Rolling ${diceString}`);
 
     while (prevOperator) {
-        console.log(`Current total is ${totalVal}`);
+        //console.log(`Current total is ${totalVal}`);
         [nextOperator,operatorPosition] = findNextOp(diceString);
         if (prevOperator == '+') {
-            console.log(`adding next value`);
+            //console.log(`adding next value`);
             totalVal += rollSingleValue(diceString.slice(0,operatorPosition));
         } else if (prevOperator == '*') {
-            console.log(`multiplying by next value`);
+            //console.log(`multiplying by next value`);
             totalVal = totalVal * rollSingleValue(diceString.slice(0,operatorPosition));
         };
         diceString = diceString.slice(operatorPosition+1);
         prevOperator = nextOperator;
     }
-    console.log(`Final value: ${totalVal}`);
-    console.log(`----------------------`);
+    //console.log(`Final value: ${totalVal}`);
+    //console.log(`----------------------`);
     return totalVal;
 }
 
@@ -62,7 +62,7 @@ function findNextOp(diceString) {
 
 //validate and roll a single value (e.g. "2d6" or "13")
 function rollSingleValue(inputVal) {
-    console.log(`evaluating ${inputVal}...`);
+    //console.log(`evaluating ${inputVal}...`);
     const dPosition = inputVal.indexOf('d');
     if (dPosition < 0) {
         if (Number.isNaN(inputVal)) throw 'invalid input';
@@ -76,9 +76,9 @@ function rollSingleValue(inputVal) {
         for (let i = 0; i < totalDice; i++) {
             diceRoll = Math.floor(Math.random() * Number(diceSize))+1;
             totalVal += diceRoll;
-            console.log(diceRoll);
+            //console.log(diceRoll);
         }
-        console.log(`total: ${totalVal}`);
+        //console.log(`total: ${totalVal}`);
         return totalVal;
     }
 }
