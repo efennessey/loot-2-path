@@ -42,7 +42,7 @@ function generateWealth(playerCount,averageLevel) {
     const totalWealth = parseFloat(apl.gold) * parseFloat(tableRoll(roll.rollValue('1d100'),treasure.percentWealth).percent);
     console.log(`total wealth ${totalWealth}`);
     const [gemQuantity,gemValue,artValue] = determineGemsAndArt(treasure,apl.gems);
-    const finalWealth = Math.max(totalWealth-gemValue-artValue,0);
+    const finalWealth = Math.max(playerCount*totalWealth-gemValue-artValue,0);
 
     return `${finalWealth}gp, ${gemQuantity} gems worth ${gemValue}gp, art worth ${artValue}gp`;
 };
@@ -64,9 +64,9 @@ function determineGemsAndArt(treasure, aplGems) {
     if (result == 'art') {
         artValue = rollArt(treasure.gemsAndArtValue);
     } else if (result == 'gems') {
-        [gemQuanity,gemValue] = rollGems(aplGems,treasure.gemsAndArtValue);
+        [gemQuantity,gemValue] = rollGems(aplGems,treasure.gemsAndArtValue);
     } else if (result == 'gems+art') {
-        [gemQuanity,gemValue] = rollGems(aplGems,treasure.gemsAndArtValue);
+        [gemQuantity,gemValue] = rollGems(aplGems,treasure.gemsAndArtValue);
         artValue = rollArt(treasure.gemsAndArtValue);
     };
     return [gemQuantity,gemValue,artValue];
