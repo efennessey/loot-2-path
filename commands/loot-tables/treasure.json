@@ -15,8 +15,8 @@
     "items": [
         {"maxRoll": "25", "rarity": ["mundane"]},
         {"maxRoll": "50", "rarity": ["mundane","minor"]},
-        {"maxRoll": "75", "rarity": ["mundane","medium"]},
-        {"maxRoll": "100", "rarity": ["mundane","major"]}
+        {"maxRoll": "75", "rarity": ["mundane","minor","medium"]},
+        {"maxRoll": "100", "rarity": ["mundane","minor","medium","major"]}
     ],
     "gemsAndArtValue": [
         {"maxRoll": "5", "value": "5d4", "average": "12.5"},
