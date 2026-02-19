@@ -112,7 +112,7 @@ WEAPONS
 [Kinidzau/Cerell - Chart as is]
 [Kairese/Chthorre/Atalan - Switch (Net & Trident) with (Sickle & Scythe)]
 [Saltopolis/Highwatch - Switch (Light & Heavy Pick) with (Sickle & Scythe)]
-[Thorn City - Switch (Longword, Chakram, & Kukri) with (Shortsword)]
+[Thorn City - Switch (Longsword, Chakram, & Kukri) with (Shortsword)]
 [Rhyncia/Icarian Range/Great Fang- Inverse weapon category probabilities. (40% Uncommon, 30% Illegal, 20% Ranged, 10% Legal)]
 [Desert/Gelmoor - Under Legal: (34% Scimitar, 8%s Sickle & Scythe -> Shortsword & Falchion); Illegal: (1% Falchion & Scimitar -> Sickle & Scythe)]
 [Moordune - Treat illegal weapons as extension of legal weapons, 50% per table.]

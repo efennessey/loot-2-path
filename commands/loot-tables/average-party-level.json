@@ -1,7 +1,0 @@
-{
-    "apl": [
-        {"apl": "1", "gold": "0", "gems": "1d3", "mundane": "0", "minor": "0", "medium": "1", "major": "0"},
-        {"apl": "2", "gold": "1000", "gems": "1d5+1", "mundane": "1", "minor": "0", "medium": "1", "major": "0"},
-        {"apl": "3", "gold": "3000", "gems": "1d7+2", "mundane": "2", "minor": "1", "medium": "1d2", "major": "1"}
-    ]
-}

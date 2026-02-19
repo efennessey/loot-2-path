@@ -1,0 +1,33 @@
+{
+  "regionGroups": {
+    "default": 0,
+    "Atalan": 1,
+    "Chthorre": 1,
+    "Kairese": 1,
+    "Saltopolis": 2,
+    "Highwatch": 2,
+    "Thorn City": 3,
+    "Rhyncia": 4,
+    "Icarian Range": 4,
+    "Great Fang": 4,
+    "Desert": 5,
+    "Gelmoor": 5,
+    "Moordune": 6
+  },
+  "groupOverrides": {
+    "1": {
+      "mundaneItemSwaps": {}
+    },
+    "2": {
+      "mundaneItemSwaps": {}
+    },
+    "3": {
+      "mundaneItemSwaps": {
+        "illegalMeleeWeapons": {
+          "Longsword": "Shortsword"
+        },
+        "uncommonWeapons": {}
+      }
+    }
+  }
+}

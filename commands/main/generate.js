@@ -1,86 +1,106 @@
-const { SlashCommandBuilder } = require('discord.js');
-const fs = require('fs');
-const path = require('path');
-const roll = require('./roll-dice.js');
+const { SlashCommandBuilder } = require("discord.js");
+const fs = require("fs");
+const path = require("path");
+const roll = require("../../helper/rolls.js");
+const wealth = require("../../helper/generate-wealth.js");
+const { EmbedBuilder } = require("discord.js");
 
 const data = new SlashCommandBuilder()
-    .setName('generate-loot')
-    .setDescription('Generates loot for a Pathfinder party based on number of players and average party level')
-    .addIntegerOption(option =>
-        option.setName('player-characters')
-            .setDescription('Number of Player Characters in the party')
-            .setRequired(true)
-            .setMinValue(1)
-            .setMaxValue(20))
-    .addIntegerOption(option =>
-        option.setName('average-party-level')
-            .setDescription('Average Party Level')
-            .setRequired(true)
-            .setMinValue(1)
-            .setMaxValue(20))
-    .addBooleanOption(option =>
-        option.setName('private')
-            .setDescription('Are the results visible to others? (default is true)'));
-
+  .setName("generate-loot")
+  .setDescription(
+    "Generates loot for a Pathfinder party based on number of players and average party level",
+  )
+  .addIntegerOption((option) =>
+    option
+      .setName("player-characters")
+      .setDescription("Number of Player Characters in the party")
+      .setRequired(true)
+      .setMinValue(1)
+      .setMaxValue(20),
+  )
+  .addIntegerOption((option) =>
+    option
+      .setName("average-party-level")
+      .setDescription("Average Party Level")
+      .setRequired(true)
+      .setMinValue(1)
+      .setMaxValue(20),
+  )
+  .addStringOption((option) =>
+    option
+      .setName("region")
+      .setDescription(
+        "Which region is this for? This may affect which items are found.",
+      )
+      .addChoices(
+        { name: "Kinidzau (default)", value: "Kinidzau" },
+        { name: "Atalan", value: "Atalan" },
+        { name: "Cerell", value: "Cerell" },
+        { name: "Chthorre", value: "Chthorre" },
+        { name: "Desert", value: "Desert" },
+        { name: "Gelmoor", value: "Gelmoor" },
+        { name: "Great Fang", value: "Great Fang" },
+        { name: "Highwatch", value: "Highwatch" },
+        { name: "Icarian Range", value: "Icarian Range" },
+        { name: "Kairese", value: "Kairese" },
+        { name: "Moordune", value: "Moordune" },
+        { name: "Rhyncia", value: "Rhyncia" },
+        { name: "Saltopolis", value: "Saltopolis" },
+        { name: "Thorn City", value: "Thorn City" },
+      ),
+  )
+  .addBooleanOption((option) =>
+    option
+      .setName("private")
+      .setDescription("Are the results visible to others? (default is true)"),
+  );
 
 module.exports = {
-	data: data,
-	async execute(interaction) {
-        const playerCount = interaction.options.getInteger('player-characters');
-        const averageLevel = interaction.options.getInteger('average-party-level');
-        const ephemeral = interaction.options.getBoolean('private');
+  data: data,
+  async execute(interaction) {
+    const playerCount = interaction.options.getInteger("player-characters");
+    const averageLevel = interaction.options.getInteger("average-party-level");
+    const ephemeral = interaction.options.getBoolean("private");
+    const region = interaction.options.getString("region");
 
-		await interaction.reply({content: `Player count: ${playerCount}, Average level: ${averageLevel}, Output: "${generateWealth(playerCount,averageLevel)}"`, ephemeral: ephemeral});
-	},
-};
+    // inside a command, event listener, etc.
+    const exampleEmbed = new EmbedBuilder()
+      .setColor(0x0099ff)
+      .setTitle("Some title")
+      .setURL("https://discord.js.org/")
+      .setAuthor({
+        name: "Some name",
+        iconURL: "https://i.imgur.com/AfFp7pu.png",
+        url: "https://discord.js.org",
+      })
+      .setDescription("Some description here")
+      .setThumbnail("https://i.imgur.com/AfFp7pu.png")
+      .addFields(
+        { name: "Regular field title", value: "Some value here" },
+        { name: "\u200B", value: "\u200B" },
+        { name: "Inline field title", value: "Some value here", inline: true },
+        { name: "Inline field title", value: "Some value here", inline: true },
+      )
+      .addFields({
+        name: "Inline field title",
+        value: "Some value here",
+        inline: true,
+      })
+      .setImage("https://i.imgur.com/AfFp7pu.png")
+      .setTimestamp()
+      .setFooter({
+        text: "Some footer text here",
+        iconURL: "https://i.imgur.com/AfFp7pu.png",
+      });
 
-//T=(PW-(G+A))+G+A+M
-function generateWealth(playerCount,averageLevel) {
-    const apl = JSON.parse(fs.readFileSync(path.resolve(__dirname, '../loot-tables/average-party-level.json'))).apl[averageLevel-1];
-    const treasure = JSON.parse(fs.readFileSync(path.resolve(__dirname, '../loot-tables/treasure.json')));
-
-    const totalWealth = parseFloat(apl.gold) * parseFloat(tableRoll(roll.rollValue('1d100'),treasure.percentWealth).percent);
-    console.log(`total wealth ${totalWealth}`);
-    const [gemQuantity,gemValue,artValue] = determineGemsAndArt(treasure,apl.gems);
-    const finalWealth = Math.max(playerCount*totalWealth-gemValue-artValue,0);
-
-    return `${finalWealth}gp, ${gemQuantity} gems worth ${gemValue}gp, art worth ${artValue}gp`;
-};
-
-// return the applicable JSON row for a roll on a table
-function tableRoll(rollResult,tableArray) {
-    for (let i = 0; i < tableArray.length; i++) {
-        if (rollResult <= tableArray[i].maxRoll)
-            return tableArray[i];
-    };
-};
-
-function determineGemsAndArt(treasure, aplGems) {
-    let gemValue = 0
-      , gemQuantity = 0
-      , artValue = 0;
-    const result = tableRoll(roll.rollValue('1d100'),treasure.gemsAndArt).result;
-    console.log(`gem and art result ${result}`);
-    if (result == 'art') {
-        artValue = rollArt(treasure.gemsAndArtValue);
-    } else if (result == 'gems') {
-        [gemQuantity,gemValue] = rollGems(aplGems,treasure.gemsAndArtValue);
-    } else if (result == 'gems+art') {
-        [gemQuantity,gemValue] = rollGems(aplGems,treasure.gemsAndArtValue);
-        artValue = rollArt(treasure.gemsAndArtValue);
-    };
-    return [gemQuantity,gemValue,artValue];
-};
-
-function rollArt(table) {
-    return 0.3 * roll.rollValue(tableRoll(roll.rollValue('1d100'),table).value);
-};
-
-function rollGems(aplGems,table) {
-    let gemValue = 0;
-    let gemQuantity = roll.rollValue(aplGems);
-    for (let i = 0; i < gemQuantity; i++) {
-        gemValue += roll.rollValue(tableRoll(roll.rollValue('1d100'),table).value);
-    };
-    return [gemQuantity,gemValue];
+    //T=(PW-(G+A))+G+A+M
+    await interaction.reply({
+      content: `Player count: ${playerCount}
+Average level: ${averageLevel}
+Region: ${region}
+Output: "${wealth.generateWealth(playerCount, averageLevel)}"`,
+      ephemeral: ephemeral,
+      embeds: [exampleEmbed],
+    });
+  },
 };

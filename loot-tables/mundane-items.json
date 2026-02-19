@@ -1,0 +1,160 @@
+{
+  "itemType": [
+    { "maxRoll": "33", "type": "weapon" },
+    { "maxRoll": "66", "type": "armor" },
+    { "maxRoll": "83", "type": "alchemical" },
+    { "maxRoll": "100", "type": "misc" }
+  ],
+
+  "weaponCategory": [
+    { "maxRoll": "40", "cat": "legal-melee" },
+    { "maxRoll": "70", "cat": "legal-ranged" },
+    { "maxRoll": "90", "cat": "illegal-melee" },
+    { "maxRoll": "100", "cat": "uncommon" }
+  ],
+
+  "inverseWeaponCategory": [
+    { "maxRoll": "40", "cat": "uncommon" },
+    { "maxRoll": "70", "cat": "illegal-melee" },
+    { "maxRoll": "90", "cat": "legal-ranged" },
+    { "maxRoll": "100", "cat": "legal-melee" }
+  ],
+
+  "legalMeleeWeapons": [
+    { "maxRoll": "34", "item": "Shortsword" },
+    { "maxRoll": "44", "item": "Dagger" },
+    { "maxRoll": "54", "item": "Quarterstaff" },
+    { "maxRoll": "62", "item": "Sickle" },
+    { "maxRoll": "70", "item": "Scythe" },
+    { "maxRoll": "76", "item": "Hatchet" },
+    { "maxRoll": "82", "item": "Club" },
+    { "maxRoll": "87", "item": "Rapier" },
+    { "maxRoll": "90", "item": "Light Hammer" },
+    { "maxRoll": "93", "item": "Light Mace" },
+    { "maxRoll": "98", "item": "Gauntlet" },
+    { "maxRoll": "99", "item": "Spiked Gauntlet" },
+    { "maxRoll": "100", "item": "Lance" }
+  ],
+
+  "legalRangedWeapons": [
+    { "maxRoll": "07", "item": "Arrows, Longbow" },
+    { "maxRoll": "10", "item": "Arrows, Shortbow" },
+    { "maxRoll": "16", "item": "Bolts" },
+    { "maxRoll": "20", "item": "Sling Bullets" },
+    { "maxRoll": "53", "item": "Longbow" },
+    { "maxRoll": "68", "item": "Light Crossbow" },
+    { "maxRoll": "78", "item": "Heavy Crossbow" },
+    { "maxRoll": "88", "item": "Shortbow" },
+    { "maxRoll": "92", "item": "Throwing Axe" },
+    { "maxRoll": "96", "item": "Javelin" },
+    { "maxRoll": "100", "item": "Sling" }
+  ],
+
+  "illegalMeleeWeapons": [
+    { "maxRoll": "22", "item": "Longsword" },
+    { "maxRoll": "33", "item": "Bastard Sword" },
+    { "maxRoll": "40", "item": "Greatsword" },
+    { "maxRoll": "47", "item": "Greataxe" },
+    { "maxRoll": "54", "item": "Greatclub" },
+    { "maxRoll": "59", "item": "Shortspear" },
+    { "maxRoll": "62", "item": "Longspear" },
+    { "maxRoll": "64", "item": "Halberd" },
+    { "maxRoll": "66", "item": "Glaive" },
+    { "maxRoll": "68", "item": "Ranseur" },
+    { "maxRoll": "70", "item": "Guisarme" },
+    { "maxRoll": "72", "item": "Falx" },
+    { "maxRoll": "80", "item": "Battleaxe" },
+    { "maxRoll": "84", "item": "Warhammer" },
+    { "maxRoll": "86", "item": "Heavy Mace" },
+    { "maxRoll": "87", "item": "Morningstar" },
+    { "maxRoll": "89", "item": "Dwarven Waraxe" },
+    { "maxRoll": "91", "item": "Dwarven Urgosh" },
+    { "maxRoll": "93", "item": "Elven Double-Bladed Sword" },
+    { "maxRoll": "94", "item": "Scimitar" },
+    { "maxRoll": "95", "item": "Falchion" },
+    { "maxRoll": "97", "item": "Hand Crossbow" },
+    { "maxRoll": "98", "item": "Repeating Crossbow" },
+    { "maxRoll": "99", "item": "Flail" },
+    { "maxRoll": "100", "item": "Whip" }
+  ],
+
+  "uncommonWeapons": [
+    { "maxRoll": "08", "item": "Nunchaku" },
+    { "maxRoll": "16", "item": "Meteor Hammer" },
+    { "maxRoll": "32", "item": "Kama" },
+    { "maxRoll": "40", "item": "Shuriken", "quantity": "2d12" },
+    { "maxRoll": "44", "item": "Siangham" },
+    { "maxRoll": "46", "item": "Blowgun" },
+    { "maxRoll": "48", "item": "Chakram", "quantity": "1d3" },
+    { "maxRoll": "57", "item": "Kukri" },
+    { "maxRoll": "68", "item": "Light Pickaxe" },
+    { "maxRoll": "78", "item": "Heavy Pickaxe" },
+    { "maxRoll": "86", "item": "Orcish Double-Axe" },
+    { "maxRoll": "91", "item": "Spiked Chain" },
+    { "maxRoll": "93", "item": "Bladed Chain" },
+    { "maxRoll": "94", "item": "Katar" },
+    { "maxRoll": "97", "item": "Gnome Hooked Hammer" },
+    { "maxRoll": "99", "item": "Net" },
+    { "maxRoll": "100", "item": "Trident" }
+  ],
+
+  "armor": [
+    { "maxRoll": "20", "item": "Leather Armor" },
+    { "maxRoll": "35", "item": "Chain Shirt" },
+    { "maxRoll": "40", "item": "Masterwork Studded Leather" },
+    { "maxRoll": "52", "item": "Hide Armor" },
+    { "maxRoll": "57", "item": "Masterwork Scale Mail" },
+    { "maxRoll": "65", "item": "Chain Mail" },
+    { "maxRoll": "75", "item": "Breastplate" },
+    { "maxRoll": "79", "item": "Masterwork Darkwood Buckler" },
+    { "maxRoll": "81", "item": "Masterwork Darkwood Light Shield" },
+    { "maxRoll": "83", "item": "Masterwork Darkwood Heavy Shield" },
+    { "maxRoll": "87", "item": "Steel Buckler" },
+    { "maxRoll": "89", "item": "Light Steel Shield" },
+    { "maxRoll": "91", "item": "Heavy Steel Shield" },
+    { "maxRoll": "94", "item": "Banded Mail" },
+    { "maxRoll": "98", "item": "Half-Plate" },
+    { "maxRoll": "100", "item": "Full Plate" }
+  ],
+
+  "alchemicalItems": [
+    { "maxRoll": "11", "item": "Holy Water", "quantity": "2d4" },
+    { "maxRoll": "18", "item": "Unholy Water", "quantity": "1d4" },
+    { "maxRoll": "19", "item": "Axiomatic Water" },
+    { "maxRoll": "20", "item": "Anarchic Water" },
+    { "maxRoll": "34", "item": "Alchemist's Fire", "quantity": "1d4" },
+    { "maxRoll": "48", "item": "Acid", "quantity": "2d4" },
+    { "maxRoll": "58", "item": "Universal Antitoxin", "quantity": "1d4" },
+    { "maxRoll": "68", "item": "Tanglefoot Bag", "quantity": "1d4" },
+    { "maxRoll": "78", "item": "Thunderstone", "quantity": "1d4" },
+    { "maxRoll": "83", "item": "Unbound Bludgeoning" },
+    { "maxRoll": "88", "item": "Unbound Piercing" },
+    { "maxRoll": "93", "item": "Unbound Slashing" },
+    { "maxRoll": "96", "item": "Smokebomb (own space, 1d3 rounds)" },
+    { "maxRoll": "97", "item": "Blacklight Tar" },
+    { "maxRoll": "98", "item": "Universal Solvent" },
+    { "maxRoll": "99", "item": "Universal Lubricant" },
+    { "maxRoll": "100", "item": "Sovereign Glue" }
+  ],
+
+  "miscellaneous": [
+    { "maxRoll": "15", "item": "Empty Backpack" },
+    { "maxRoll": "20", "item": "Hemp Rope" },
+    { "maxRoll": "23", "item": "Silk Rope" },
+    { "maxRoll": "30", "item": "Magnifying Glass" },
+    { "maxRoll": "37", "item": "Spyglass" },
+    { "maxRoll": "44", "item": "Masterwork Musical Instrument" },
+    { "maxRoll": "50", "item": "Masterwork Thieves' Tools" },
+    { "maxRoll": "53", "item": "Holy Symbol" },
+    { "maxRoll": "56", "item": "Unholy Symbol" },
+    { "maxRoll": "61", "item": "Bullseye Lantern" },
+    { "maxRoll": "66", "item": "Oil (1 pint)" },
+    { "maxRoll": "71", "item": "Masterwork Manacles" },
+    { "maxRoll": "76", "item": "Crowbar" },
+    { "maxRoll": "81", "item": "Masterwork Artisan's Tools" },
+    { "maxRoll": "86", "item": "Climber's Kit" },
+    { "maxRoll": "91", "item": "Disguise Kit" },
+    { "maxRoll": "96", "item": "Healer's Kit" },
+    { "maxRoll": "100", "item": "Torch", "quantity": "1d3" }
+  ]
+}

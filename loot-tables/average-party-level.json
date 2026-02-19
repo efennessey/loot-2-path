@@ -1,0 +1,184 @@
+{
+  "apl": [
+    {
+      "apl": "1",
+      "gold": "0",
+      "gems": "1d3",
+      "mundane": "0",
+      "minor": "0",
+      "medium": "1",
+      "major": "0"
+    },
+    {
+      "apl": "2",
+      "gold": "1000",
+      "gems": "1d5+1",
+      "mundane": "1",
+      "minor": "0",
+      "medium": "1",
+      "major": "0"
+    },
+    {
+      "apl": "3",
+      "gold": "3000",
+      "gems": "1d7+2",
+      "mundane": "2",
+      "minor": "1",
+      "medium": "1d2",
+      "major": "1"
+    },
+    {
+      "apl": "4",
+      "gold": "6000",
+      "gems": "1d9+3",
+      "mundane": "3",
+      "minor": "1",
+      "medium": "1d2",
+      "major": "1"
+    },
+    {
+      "apl": "5",
+      "gold": "10500",
+      "gems": "1d11+4",
+      "mundane": "3",
+      "minor": "2",
+      "medium": "1d3",
+      "major": "1"
+    },
+    {
+      "apl": "6",
+      "gold": "16000",
+      "gems": "1d13+5",
+      "mundane": "4",
+      "minor": "2",
+      "medium": "1d3",
+      "major": "1d2"
+    },
+    {
+      "apl": "7",
+      "gold": "23500",
+      "gems": "1d15+6",
+      "mundane": "5",
+      "minor": "3",
+      "medium": "2",
+      "major": "1d2"
+    },
+    {
+      "apl": "8",
+      "gold": "33000",
+      "gems": "1d17+7",
+      "mundane": "6",
+      "minor": "3",
+      "medium": "2",
+      "major": "1d2"
+    },
+    {
+      "apl": "9",
+      "gold": "46000",
+      "gems": "1d19+8",
+      "mundane": "6",
+      "minor": "4",
+      "medium": "1d4",
+      "major": "1d3"
+    },
+    {
+      "apl": "10",
+      "gold": "62000",
+      "gems": "1d21+9",
+      "mundane": "7",
+      "minor": "4",
+      "medium": "1d4",
+      "major": "1d3"
+    },
+    {
+      "apl": "11",
+      "gold": "82000",
+      "gems": "1d23+10",
+      "mundane": "8",
+      "minor": "5",
+      "medium": "1d2+1",
+      "major": "1d3"
+    },
+    {
+      "apl": "12",
+      "gold": "108000",
+      "gems": "1d25+11",
+      "mundane": "9",
+      "minor": "5",
+      "medium": "1d2+1",
+      "major": "2"
+    },
+    {
+      "apl": "13",
+      "gold": "140000",
+      "gems": "1d27+13",
+      "mundane": "9",
+      "minor": "6",
+      "medium": "1d3+1",
+      "major": "2"
+    },
+    {
+      "apl": "14",
+      "gold": "185000",
+      "gems": "1d29+13",
+      "mundane": "10",
+      "minor": "6",
+      "medium": "1d3+1",
+      "major": "2"
+    },
+    {
+      "apl": "15",
+      "gold": "240000",
+      "gems": "1d31+14",
+      "mundane": "11",
+      "minor": "7",
+      "medium": "1d4+1",
+      "major": "1d4"
+    },
+    {
+      "apl": "16",
+      "gold": "315000",
+      "gems": "1d33+15",
+      "mundane": "12",
+      "minor": "7",
+      "medium": "1d4+1",
+      "major": "1d4"
+    },
+    {
+      "apl": "17",
+      "gold": "410000",
+      "gems": "1d35+16",
+      "mundane": "12",
+      "minor": "8",
+      "medium": "1d3+2",
+      "major": "1d4"
+    },
+    {
+      "apl": "18",
+      "gold": "530000",
+      "gems": "1d37+17",
+      "mundane": "13",
+      "minor": "8",
+      "medium": "1d3+2",
+      "major": "1d2+1"
+    },
+    {
+      "apl": "19",
+      "gold": "685000",
+      "gems": "1d39+18",
+      "mundane": "14",
+      "minor": "9",
+      "medium": "1d2+3",
+      "major": "1d2+1"
+    },
+    {
+      "apl": "20",
+      "gold": "880000",
+      "gems": "1d41+19",
+      "mundane": "15",
+      "minor": "9",
+      "medium": "1d2+3",
+      "major": "1d2+1"
+    }
+  ]
+}
