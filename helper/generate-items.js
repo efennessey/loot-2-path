@@ -4,7 +4,7 @@ const roll = require("./rolls.js");
 
 module.exports = { generateItems };
 
-function determineItems(averageLevel) {
+function generateItems(averageLevel, region) {
   const apl = JSON.parse(
     fs.readFileSync(
       path.resolve(__dirname, "../loot-tables/average-party-level.json"),
@@ -26,15 +26,19 @@ function determineItems(averageLevel) {
 
   for (let i = 0; i < itemRarities.length; i++) {
     if (itemRarities[i] == "mundane") {
-      mundane = rollMundaneItems();
+      mundane = rollMundaneItems(roll.tableRoll(apl.mundane), region);
     } else if (itemRarities[i] == "minor") {
-      minor = rollMinorItems();
+      minor = rollMinorItems(roll.tableRoll(apl.minor));
     } else if (itemRarities[i] == "medium") {
-      medium = rollMediumItems();
+      medium = rollMediumItems(roll.tableRoll(apl.medium));
     } else if (itemRarities[i] == "major") {
-      major = rollMajorItems();
+      major = rollMajorItems(roll.tableRoll(apl.major));
     }
   }
 
   return [...mundane, ...minor, ...medium, ...major];
+}
+
+function rollMundaneItems(numItems, region) {
+
 }

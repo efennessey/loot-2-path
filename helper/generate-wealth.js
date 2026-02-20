@@ -30,7 +30,7 @@ function generateWealth(playerCount, averageLevel) {
     0,
   );
 
-  return `${finalGold}gp, ${gemQuantity} gems worth ${gemValue}gp, art worth ${artValue}gp`;
+  return [finalGold, gemQuantity, gemValue, artValue];
 }
 
 function determineGemsAndArt(treasure, aplGems) {
