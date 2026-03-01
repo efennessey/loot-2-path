@@ -1,18 +1,180 @@
 {
-  "regionGroups": {
-    "default": 0,
-    "Atalan": 1,
-    "Chthorre": 1,
-    "Kairese": 1,
-    "Saltopolis": 2,
-    "Highwatch": 2,
-    "Thorn City": 3,
-    "Rhyncia": 4,
-    "Icarian Range": 4,
-    "Great Fang": 4,
-    "Desert": 5,
-    "Gelmoor": 5,
-    "Moordune": 6
+  "regions": {
+    "ahgri": {
+      "displayName": "Ahgri",
+      "economy": "overrun",
+      "terrain": "civilized"
+    },
+    "atalan": {
+      "displayName": "Atalan",
+      "economy": "fishing",
+      "terrain": "civilized"
+    },
+    "cerell": {
+      "displayName": "Cerell",
+      "economy": "farming",
+      "terrain": "civilized"
+    },
+    "chthorre": {
+      "displayName": "Chthorre",
+      "economy": "fishing",
+      "terrain": "civilized"
+    },
+    "cynthif": {
+      "displayName": "Cynthif",
+      "economy": "farming",
+      "terrain": "civilized"
+    },
+    "deinara": {
+      "displayName": "Deinara",
+      "economy": "fishing",
+      "terrain": "civilized"
+    },
+    "eastreach": {
+      "displayName": "Eastreach",
+      "economy": "fishing",
+      "terrain": "civilized"
+    },
+    "epioko": {
+      "displayName": "Epi Oko",
+      "economy": "forested",
+      "terrain": "civilized"
+    },
+    "forcia": {
+      "displayName": "Forcia",
+      "economy": "farming",
+      "terrain": "savage"
+    },
+    "gelmour": {
+      "displayName": "Gelmour",
+      "economy": "warring",
+      "terrain": "savage"
+    },
+    "greatfang": {
+      "displayName": "Great Fang",
+      "economy": "warring",
+      "terrain": "savage"
+    },
+    "gloomhame": {
+      "displayName": "Gloomhame",
+      "economy": "forested",
+      "terrain": "civilized"
+    },
+    "highwatch": {
+      "displayName": "Highwatch",
+      "economy": "mining",
+      "terrain": "civilized"
+    },
+    "icehold": {
+      "displayName": "Icehold",
+      "economy": "fishing",
+      "terrain": "arctic"
+    },
+    "icarianrange": {
+      "displayName": "Icarian Range",
+      "economy": "farming",
+      "terrain": "trackless"
+    },
+    "issan": {
+      "displayName": "Issan",
+      "economy": "fishing",
+      "terrain": "civilized"
+    },
+    "kairese": {
+      "displayName": "Kairese",
+      "economy": "fishing",
+      "terrain": "civilized"
+    },
+    "khalilia": {
+      "displayName": "Khalilia",
+      "economy": "warring",
+      "terrain": "civilized"
+    },
+    "kinidzau": {
+      "displayName": "Kinidzau",
+      "economy": "farming",
+      "terrain": "civilized"
+    },
+    "kryssia": {
+      "displayName": "Kryssia",
+      "economy": "forested",
+      "terrain": "civilized"
+    },
+    "maebad": {
+      "displayName": "Maebad",
+      "economy": "farming",
+      "terrain": "civilized"
+    },
+    "murdune": {
+      "displayName": "Murdune",
+      "economy": "farming",
+      "terrain": "arctic"
+    },
+    "mistvale": {
+      "displayName": "Mistvale",
+      "economy": "forested",
+      "terrain": "trackless"
+    },
+    "noirarciel": {
+      "displayName": "Noirarciel",
+      "economy": "forested",
+      "terrain": "civilized"
+    },
+    "oceanside": {
+      "displayName": "Oceanside",
+      "economy": "fishing",
+      "terrain": "civilized"
+    },
+    "paperton": {
+      "displayName": "Paperton",
+      "economy": "farming",
+      "terrain": "civilized"
+    },
+    "pixton": {
+      "displayName": "Pixton",
+      "economy": "farming",
+      "terrain": "civilized"
+    },
+    "rhyncia": {
+      "displayName": "Rhyncia",
+      "economy": "farming",
+      "terrain": "savage"
+    },
+    "salpolis": {
+      "displayName": "Salpolis",
+      "economy": "mining",
+      "terrain": "civilized"
+    },
+    "sandhome": {
+      "displayName": "Sandhome",
+      "economy": "overrun",
+      "terrain": "trackless"
+    },
+    "schistport": {
+      "displayName": "Schistport",
+      "economy": "fishing",
+      "terrain": "civilized"
+    },
+    "skygarten": {
+      "displayName": "Skygarten",
+      "economy": "farming",
+      "terrain": "trackless"
+    },
+    "thaarnth": {
+      "displayName": "Tha'arnth",
+      "economy": "mining",
+      "terrain": "civilized"
+    },
+    "thorncity": {
+      "displayName": "Thorn City",
+      "economy": "warring",
+      "terrain": "civilized"
+    },
+    "zoma": {
+      "displayName": "Zoma Desert",
+      "economy": "overrun",
+      "terrain": "trackless"
+    }
   },
   "groupOverrides": {
     "1": {

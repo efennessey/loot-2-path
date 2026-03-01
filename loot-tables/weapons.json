@@ -1,0 +1,149 @@
+{
+  "weaponCategoriesByTerrain": {
+    "civilized": [
+      { "maxRoll": "40", "cat": "legalMelee" },
+      { "maxRoll": "70", "cat": "legalRanged" },
+      { "maxRoll": "90", "cat": "illegalWeapons" },
+      { "maxRoll": "100", "cat": "uncommonWeapons" }
+    ],
+    "arctic": [
+      { "maxRoll": "30", "cat": "legalRanged" },
+      { "maxRoll": "50", "cat": "legalMelee" },
+      { "maxRoll": "85", "cat": "illegalWeapons" },
+      { "maxRoll": "100", "cat": "uncommonWeapons" }
+    ],
+    "savage": [
+      { "maxRoll": "40", "cat": "illegalWeapons" },
+      { "maxRoll": "70", "cat": "legalRanged" },
+      { "maxRoll": "90", "cat": "legalMelee" },
+      { "maxRoll": "100", "cat": "uncommonWeapons" }
+    ],
+    "trackless": [
+      { "maxRoll": "40", "cat": "legalRanged" },
+      { "maxRoll": "70", "cat": "legalMelee" },
+      { "maxRoll": "90", "cat": "illegalWeapons" },
+      { "maxRoll": "100", "cat": "uncommonWeapons" }
+    ]
+  },
+  "weaponOverridesByEconomy": {
+    "fishing": {
+      "sickle": "net",
+      "scythe": "trident",
+      "handaxe": "boardingAxe"
+    },
+    "forested": {
+      "sickle": "handaxe",
+      "scythe": "battleaxe",
+      "handaxe": "machete"
+    },
+    "mining": {
+      "sickle": "lightPick",
+      "scythe": "heavyPick",
+      "lanternStaff": "pickaxe"
+    },
+    "overrun": {
+      "shortsword": "greatclub",
+      "sickle": "shortsword",
+      "scythe": "falchion"
+    },
+    "warring": {
+      "shortsword": "longsword",
+      "sickle": "shortsword",
+      "scythe": "lance",
+      "lightHammer": "warhammer",
+      "handaxe": "battleaxe",
+      "club": "greatclub",
+      "lanternStaff": "heavyCrossbow",
+      "slingBullets": "chakram",
+      "sling": "spear"
+    }
+  },
+  "legalMelee": [
+    { "maxRoll": "33", "item": "dagger" },
+    { "maxRoll": "54", "item": "shortsword" },
+    { "maxRoll": "63", "item": "quarterstaff" },
+    { "maxRoll": "71", "item": "sickle" },
+    { "maxRoll": "79", "item": "scythe" },
+    { "maxRoll": "87", "item": "lightHammer" },
+    { "maxRoll": "92", "item": "handaxe" },
+    { "maxRoll": "97", "item": "club" },
+    { "maxRoll": "100", "item": "lanternStaff" }
+  ],
+  "legalRanged": [
+    { "maxRoll": "7", "item": "longbowArrows" },
+    { "maxRoll": "10", "item": "shortbowArrows" },
+    { "maxRoll": "16", "item": "bolts" },
+    { "maxRoll": "20", "item": "slingBullets" },
+    { "maxRoll": "53", "item": "longbow" },
+    { "maxRoll": "68", "item": "lightCrossbow" },
+    { "maxRoll": "88", "item": "shortbow" },
+    { "maxRoll": "93", "item": "sling" },
+    { "maxRoll": "98", "item": "throwingAxe" },
+    { "maxRoll": "100", "item": "javelin" }
+  ],
+  "illegalWeapons": [
+    { "maxRoll": "20", "item": "longsword" },
+    { "maxRoll": "30", "item": "bastardSword" },
+    { "maxRoll": "35", "item": "greatsword" },
+    { "maxRoll": "43", "item": "battleaxe" },
+    { "maxRoll": "45", "item": "dwarvenWaraxe" },
+    { "maxRoll": "49", "item": "greataxe" },
+    { "maxRoll": "50", "item": "butcherAxe" },
+    { "maxRoll": "53", "item": "lightMace" },
+    { "maxRoll": "55", "item": "heavyMace" },
+    { "maxRoll": "59", "item": "warhammer" },
+    { "maxRoll": "60", "item": "morningstar" },
+    { "maxRoll": "64", "item": "greatclub" },
+    { "maxRoll": "65", "item": "earthBreaker" },
+    { "maxRoll": "68", "item": "shortspear" },
+    { "maxRoll": "71", "item": "spear" },
+    { "maxRoll": "74", "item": "longspear" },
+    { "maxRoll": "76", "item": "halberd" },
+    { "maxRoll": "78", "item": "glaiveGuisarme" },
+    { "maxRoll": "80", "item": "ranseur" },
+    { "maxRoll": "82", "item": "dwarvenLonghammer" },
+    { "maxRoll": "87", "item": "rapier" },
+    { "maxRoll": "89", "item": "scimitar" },
+    { "maxRoll": "90", "item": "elvenCurveBlade" },
+    { "maxRoll": "91", "item": "falchion" },
+    { "maxRoll": "93", "item": "lance" },
+    { "maxRoll": "94", "item": "gauntlet" },
+    { "maxRoll": "95", "item": "spikedGauntlet" },
+    { "maxRoll": "96", "item": "heavyCrossbow" },
+    { "maxRoll": "97", "item": "handCrossbow" },
+    { "maxRoll": "98", "item": "lightFlail" },
+    { "maxRoll": "99", "item": "heavyFlail" },
+    { "maxRoll": "100", "item": "whip" }
+  ],
+  "uncommonWeapons": [
+    { "maxRoll": "7", "item": "nunchaku" },
+    { "maxRoll": "12", "item": "meteorHammer" },
+    { "maxRoll": "15", "item": "flyingTalon" },
+    { "maxRoll": "16", "item": "kyoketsuShoge" },
+    { "maxRoll": "19", "item": "punchingDagger" },
+    { "maxRoll": "21", "item": "siangham" },
+    { "maxRoll": "25", "item": "kama" },
+    { "maxRoll": "35", "item": "kukri" },
+    { "maxRoll": "36", "item": "terbutje" },
+    { "maxRoll": "40", "item": "spikedChain" },
+    { "maxRoll": "43", "item": "bladedScarf" },
+    { "maxRoll": "44", "item": "sai" },
+    { "maxRoll": "49", "item": "shuriken", "quantity": "2d12" },
+    { "maxRoll": "51", "item": "blowgun" },
+    { "maxRoll": "56", "item": "chakram", "quantity": "1d3" },
+    { "maxRoll": "65", "item": "sickle" },
+    { "maxRoll": "74", "item": "scythe" },
+    { "maxRoll": "79", "item": "lanternStaff" },
+    { "maxRoll": "84", "item": "net" },
+    { "maxRoll": "87", "item": "trident" },
+    { "maxRoll": "88", "item": "boardingAxe" },
+    { "maxRoll": "91", "item": "lightPick" },
+    { "maxRoll": "93", "item": "heavyPick" },
+    { "maxRoll": "94", "item": "pickaxe" },
+    { "maxRoll": "96", "item": "handaxe" },
+    { "maxRoll": "97", "item": "battleaxe" },
+    { "maxRoll": "98", "item": "machete" },
+    { "maxRoll": "99", "item": "swordbreakerDagger" },
+    { "maxRoll": "100", "item": "drowRazor" }
+  ]
+}

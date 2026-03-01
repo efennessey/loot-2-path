@@ -1,0 +1,288 @@
+{
+  "weapons": {
+    "bastardSword": {
+      "name": "Bastard Sword",
+      "link": "https://www.d20pfsrd.com/equipment/weapons/weapon-descriptions/sword-bastard/"
+    },
+    "battleaxe": {
+      "name": "Battleaxe",
+      "link": "https://www.d20pfsrd.com/equipment/weapons/weapon-descriptions/axe-battle/"
+    },
+    "bladedScarf": { "name": "Bladed Scarf", "link": "" },
+    "blowgun": {
+      "name": "Blowgun",
+      "link": "https://www.d20pfsrd.com/equipment/weapons/weapon-descriptions/blowgun/"
+    },
+    "boardingAxe": {
+      "name": "Axe, Boarding",
+      "link": "https://www.d20pfsrd.com/equipment/weapons/weapon-descriptions/axe-boarding/"
+    },
+    "bolts": { "name": "Bolts", "link": "" },
+    "butcherAxe": {
+      "name": "Axe, Butcher",
+      "link": "https://www.d20pfsrd.com/equipment/weapons/weapon-descriptions/axe-butchering/"
+    },
+    "chakram": {
+      "name": "Chakram",
+      "quantity": "1d3",
+      "link": "https://www.d20pfsrd.com/equipment/weapons/weapon-descriptions/chakram-common/"
+    },
+    "club": {
+      "name": "Club",
+      "link": "https://www.d20pfsrd.com/equipment/weapons/weapon-descriptions/club/"
+    },
+    "dagger": {
+      "name": "Dagger",
+      "link": "https://www.d20pfsrd.com/equipment/weapons/weapon-descriptions/dagger/"
+    },
+    "drowRazor": {
+      "name": "Razor, Drow",
+      "link": "https://www.d20pfsrd.com/equipment/weapons/weapon-descriptions/razor-drow/"
+    },
+    "dwarvenLonghammer": {
+      "name": "Longhammer, Dwarven",
+      "link": "https://www.d20pfsrd.com/equipment/weapons/weapon-descriptions/longhammer-dwarven/"
+    },
+    "dwarvenWaraxe": {
+      "name": "Waraxe, Dwarven",
+      "link": "https://www.d20pfsrd.com/equipment/weapons/weapon-descriptions/waraxe-dwarven/"
+    },
+    "earthBreaker": {
+      "name": "Earth Breaker",
+      "link": "https://www.d20pfsrd.com/equipment/weapons/weapon-descriptions/earth-breaker/"
+    },
+    "elvenCurveBlade": {
+      "name": "Curve Blade, Elven",
+      "link": "https://www.d20pfsrd.com/equipment/weapons/weapon-descriptions/curve-blade-elven/"
+    },
+    "falchion": {
+      "name": "Falchion",
+      "link": "https://www.d20pfsrd.com/equipment/weapons/weapon-descriptions/falchion/"
+    },
+    "flyingTalon": { "name": "Flying Talon", "link": "" },
+    "gauntlet": {
+      "name": "Gauntlet",
+      "link": "https://www.d20pfsrd.com/equipment/weapons/weapon-descriptions/gauntlet/"
+    },
+    "glaiveGuisarme": {
+      "name": "Glaive-Guisarme",
+      "link": "https://www.d20pfsrd.com/equipment/weapons/weapon-descriptions/glaive-guisarme/"
+    },
+    "greatclub": {
+      "name": "Greatclub",
+      "link": "https://www.d20pfsrd.com/equipment/weapons/weapon-descriptions/club-great/"
+    },
+    "greataxe": {
+      "name": "Greataxe",
+      "link": "https://www.d20pfsrd.com/equipment/weapons/weapon-descriptions/axe-great/"
+    },
+    "greatsword": {
+      "name": "Greatsword",
+      "link": "https://www.d20pfsrd.com/equipment/weapons/weapon-descriptions/greatsword/"
+    },
+    "halberd": {
+      "name": "Halberd",
+      "link": "https://www.d20pfsrd.com/equipment/weapons/weapon-descriptions/halberd/"
+    },
+    "handCrossbow": {
+      "name": "Hand Crossbow",
+      "link": "https://www.d20pfsrd.com/equipment/weapons/weapon-descriptions/crossbow-hand/"
+    },
+    "handaxe": {
+      "name": "Handaxe",
+      "link": "https://www.d20pfsrd.com/equipment/weapons/weapon-descriptions/handaxe/"
+    },
+    "heavyCrossbow": {
+      "name": "Heavy Crossbow",
+      "link": "https://www.d20pfsrd.com/equipment/weapons/weapon-descriptions/crossbow-heavy/"
+    },
+    "heavyFlail": {
+      "name": "Heavy Flail",
+      "link": "https://www.d20pfsrd.com/equipment/weapons/weapon-descriptions/flail-heavy/"
+    },
+    "heavyMace": {
+      "name": "Heavy Mace",
+      "link": "https://www.d20pfsrd.com/equipment/weapons/weapon-descriptions/mace-heavy/"
+    },
+    "heavyPick": {
+      "name": "Pick, Heavy",
+      "link": "https://www.d20pfsrd.com/equipment/weapons/weapon-descriptions/pick-heavy/"
+    },
+    "javelin": {
+      "name": "Javelin",
+      "link": "https://www.d20pfsrd.com/equipment/weapons/weapon-descriptions/javelin/"
+    },
+    "kama": {
+      "name": "Kama",
+      "link": "https://www.d20pfsrd.com/equipment/weapons/weapon-descriptions/kama/"
+    },
+    "kukri": {
+      "name": "Kukri",
+      "link": "https://www.d20pfsrd.com/equipment/weapons/weapon-descriptions/kukri/"
+    },
+    "kyoketsuShoge": {
+      "name": "Kyoketsu Shoge",
+      "link": "https://www.d20pfsrd.com/equipment/weapons/weapon-descriptions/kyoketsu-shoge/"
+    },
+    "lance": {
+      "name": "Lance",
+      "link": "https://www.d20pfsrd.com/equipment/weapons/weapon-descriptions/lance/"
+    },
+    "lanternStaff": {
+      "name": "Lantern Staff",
+      "link": "https://www.d20pfsrd.com/equipment/weapons/weapon-descriptions/staff-lantern/"
+    },
+    "lightCrossbow": {
+      "name": "Light Crossbow",
+      "link": "https://www.d20pfsrd.com/equipment/weapons/weapon-descriptions/crossbow-light/"
+    },
+    "lightFlail": {
+      "name": "Light Flail",
+      "link": "https://www.d20pfsrd.com/equipment/weapons/weapon-descriptions/flail-light/"
+    },
+    "lightHammer": {
+      "name": "Light Hammer",
+      "link": "https://www.d20pfsrd.com/equipment/weapons/weapon-descriptions/hammer-light/"
+    },
+    "lightMace": {
+      "name": "Light Mace",
+      "link": "https://www.d20pfsrd.com/equipment/weapons/weapon-descriptions/mace-light/"
+    },
+    "lightPick": {
+      "name": "Pick, Light",
+      "link": "https://www.d20pfsrd.com/equipment/weapons/weapon-descriptions/pick-light/"
+    },
+    "longbow": {
+      "name": "Longbow",
+      "link": "https://www.d20pfsrd.com/equipment/weapons/weapon-descriptions/longbow/"
+    },
+    "longbowArrows": { "name": "Arrows, Longbow", "link": "" },
+    "longhammerDwarven": {
+      "name": "Longhammer, Dwarven",
+      "link": "https://www.d20pfsrd.com/equipment/weapons/weapon-descriptions/longhammer-dwarven/"
+    },
+    "longspear": {
+      "name": "Longspear",
+      "link": "https://www.d20pfsrd.com/equipment/weapons/weapon-descriptions/longspear/"
+    },
+    "longsword": {
+      "name": "Longsword",
+      "link": "https://www.d20pfsrd.com/equipment/weapons/weapon-descriptions/longsword/"
+    },
+    "machete": {
+      "name": "Machete",
+      "link": "https://www.d20pfsrd.com/equipment/weapons/weapon-descriptions/machete/"
+    },
+    "meteorHammer": {
+      "name": "Meteor Hammer",
+      "link": "https://www.d20pfsrd.com/equipment/weapons/weapon-descriptions/meteor-hammer/"
+    },
+    "morningstar": {
+      "name": "Morningstar",
+      "link": "https://www.d20pfsrd.com/equipment/weapons/weapon-descriptions/morningstar/"
+    },
+    "net": {
+      "name": "Net",
+      "link": "https://www.d20pfsrd.com/equipment/weapons/weapon-descriptions/net/"
+    },
+    "nunchaku": {
+      "name": "Nunchaku",
+      "link": "https://www.d20pfsrd.com/equipment/weapons/weapon-descriptions/nunchaku/"
+    },
+    "pickaxe": {
+      "name": "Pickaxe",
+      "link": "https://www.d20pfsrd.com/equipment/weapons/weapon-descriptions/pickaxe/"
+    },
+    "punchingDagger": {
+      "name": "Punching Dagger",
+      "link": "https://www.d20pfsrd.com/equipment/weapons/weapon-descriptions/dagger-punching/"
+    },
+    "quarterstaff": {
+      "name": "Quarterstaff",
+      "link": "https://www.d20pfsrd.com/equipment/weapons/weapon-descriptions/quarterstaff/"
+    },
+    "ranseur": {
+      "name": "Ranseur",
+      "link": "https://www.d20pfsrd.com/equipment/weapons/weapon-descriptions/ranseur/"
+    },
+    "rapier": {
+      "name": "Rapier",
+      "link": "https://www.d20pfsrd.com/equipment/weapons/weapon-descriptions/rapier/"
+    },
+    "scimitar": {
+      "name": "Scimitar",
+      "link": "https://www.d20pfsrd.com/equipment/weapons/weapon-descriptions/scimitar/"
+    },
+    "scythe": {
+      "name": "Scythe",
+      "link": "https://www.d20pfsrd.com/equipment/weapons/weapon-descriptions/scythe/"
+    },
+    "shortbow": {
+      "name": "Shortbow",
+      "link": "https://www.d20pfsrd.com/equipment/weapons/weapon-descriptions/shortbow/"
+    },
+    "shortbowArrows": { "name": "Arrows, Shortbow", "link": "" },
+    "shortspear": {
+      "name": "Shortspear",
+      "link": "https://www.d20pfsrd.com/equipment/weapons/weapon-descriptions/shortspear/"
+    },
+    "shortsword": {
+      "name": "Shortsword",
+      "link": "https://www.d20pfsrd.com/equipment/weapons/weapon-descriptions/shortsword/"
+    },
+    "shuriken": {
+      "name": "Shuriken",
+      "quantity": "2d12",
+      "link": "https://www.d20pfsrd.com/equipment/weapons/weapon-descriptions/shuriken-common/"
+    },
+    "siangham": {
+      "name": "Siangham",
+      "link": "https://www.d20pfsrd.com/equipment/weapons/weapon-descriptions/siangham/"
+    },
+    "sickle": {
+      "name": "Sickle",
+      "link": "https://www.d20pfsrd.com/equipment/weapons/weapon-descriptions/sickle/"
+    },
+    "sling": {
+      "name": "Sling",
+      "link": "https://www.d20pfsrd.com/equipment/weapons/weapon-descriptions/sling/"
+    },
+    "slingBullets": { "name": "Sling Bullets", "link": "" },
+    "spear": {
+      "name": "Spear",
+      "link": "https://www.d20pfsrd.com/equipment/weapons/weapon-descriptions/spear/"
+    },
+    "spikedChain": {
+      "name": "Spiked Chain",
+      "link": "https://www.d20pfsrd.com/equipment/weapons/weapon-descriptions/chain-spiked/"
+    },
+    "spikedGauntlet": {
+      "name": "Spiked Gauntlet",
+      "link": "https://www.d20pfsrd.com/equipment/weapons/weapon-descriptions/gauntlet-spiked/"
+    },
+    "swordbreakerDagger": {
+      "name": "Dagger, Swordbreaker",
+      "link": "https://www.d20pfsrd.com/equipment/weapons/weapon-descriptions/dagger-swordbreaker/"
+    },
+    "terbutje": {
+      "name": "Terbutje",
+      "link": "https://www.d20pfsrd.com/equipment/weapons/weapon-descriptions/terbutje/"
+    },
+    "throwingAxe": {
+      "name": "Throwing Axe",
+      "link": "https://www.d20pfsrd.com/equipment/weapons/weapon-descriptions/axe-throwing/"
+    },
+    "trident": {
+      "name": "Trident",
+      "link": "https://www.d20pfsrd.com/equipment/weapons/weapon-descriptions/trident/"
+    },
+    "warhammer": {
+      "name": "Warhammer",
+      "link": "https://www.d20pfsrd.com/equipment/weapons/weapon-descriptions/warhammer/"
+    },
+    "whip": {
+      "name": "Whip",
+      "link": "https://www.d20pfsrd.com/equipment/weapons/weapon-descriptions/whip/"
+    }
+  }
+}

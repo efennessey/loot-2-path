@@ -30,24 +30,9 @@ const data = new SlashCommandBuilder()
     option
       .setName("region")
       .setDescription(
-        "Which region is this for? This may affect which items are found.",
+        "Which region/settlement is this for? This may affect which items are found. (Default is Kinidzau)",
       )
-      .addChoices(
-        { name: "Kinidzau (default)", value: "Kinidzau" },
-        { name: "Atalan", value: "Atalan" },
-        { name: "Cerell", value: "Cerell" },
-        { name: "Chthorre", value: "Chthorre" },
-        { name: "Desert", value: "Desert" },
-        { name: "Gelmoor", value: "Gelmoor" },
-        { name: "Great Fang", value: "Great Fang" },
-        { name: "Highwatch", value: "Highwatch" },
-        { name: "Icarian Range", value: "Icarian Range" },
-        { name: "Kairese", value: "Kairese" },
-        { name: "Moordune", value: "Moordune" },
-        { name: "Rhyncia", value: "Rhyncia" },
-        { name: "Saltopolis", value: "Saltopolis" },
-        { name: "Thorn City", value: "Thorn City" },
-      ),
+      .setAutocomplete(true),
   )
   .addBooleanOption((option) =>
     option
@@ -55,14 +40,45 @@ const data = new SlashCommandBuilder()
       .setDescription("Are the results visible to others? (default is true)"),
   );
 
+function regionChoices() {
+  const regions = JSON.parse(
+    fs.readFileSync(
+      path.resolve(__dirname, "../../loot-tables/region-configs.json"),
+    ),
+  ).regions;
+
+  let choices = [];
+
+  Object.entries(regions).forEach(([id, info]) => {
+    choices.push({name: info.displayName, value: id});
+  });
+  return choices
+}
+
 module.exports = {
   data: data,
+  async autocomplete(interaction) {
+    const focusedOption = interaction.options.getFocused(true);
+    let choices;
+
+    if (focusedOption.name === "region") {
+      choices = regionChoices();
+    }
+
+    const filtered = choices.filter((choice) =>
+      choice.name.toLowerCase().startsWith(focusedOption.value.toLowerCase()),
+    ).slice(0, 24);
+
+    await interaction.respond(
+      filtered,
+    );
+  },
   async execute(interaction) {
     // arguments
     const playerCount = interaction.options.getInteger("player-characters");
     const averageLevel = interaction.options.getInteger("average-party-level");
     const ephemeral = interaction.options.getBoolean("private");
-    const region = interaction.options.getString("region") || "Kinidzau";
+    const region = interaction.options.getString("region") || "kinidzau";
 
     const titles = [
       "Look at all that loot!",
@@ -81,10 +97,19 @@ module.exports = {
       averageLevel,
     );
 
-    const wealthFields = []
-    if (gold > 0) {wealthFields.push({name:"Gold", value:`${gold} gp`})};
-    if (gemQuantity > 0) {wealthFields.push({name:"Gems", value:`${gemValue} gp (${gemQuantity} gems)`})};
-    if (artValue > 0) {wealthFields.push({name:"Art", value:`${artValue} gp`})};
+    const wealthFields = [];
+    if (gold > 0) {
+      wealthFields.push({ name: "Gold", value: `${gold} gp` });
+    }
+    if (gemQuantity > 0) {
+      wealthFields.push({
+        name: "Gems",
+        value: `${gemValue} gp (${gemQuantity} gems)`,
+      });
+    }
+    if (artValue > 0) {
+      wealthFields.push({ name: "Art", value: `${artValue} gp` });
+    }
 
     //items.generateItems(averageLevel, region)
 
@@ -103,8 +128,8 @@ module.exports = {
       )
       //.setThumbnail("https://i.imgur.com/AfFp7pu.png")
       .addFields(
-       // { name: "\u200B", value: "\u200B", inline: true },
-        wealthFields
+        // { name: "\u200B", value: "\u200B", inline: true },
+        wealthFields,
       )
       .addFields({
         name: "Inline field title",

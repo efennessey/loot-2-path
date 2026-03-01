@@ -91,6 +91,262 @@ __________|____________|_________________
 
 
 
+Weapon Probability by Verst Region or Settlement 2
+__________________________________________________
+
+
+Every settlement has two qualities.
+The terrain qualities dictate the percentages of weapon categories.
+The economic qualities dictate substitutions from the default tables.
+
+
+Default Tables:
+
+LEGAL MELEE
+______________________________
+D100 roll | Weapon
+__________|___________________
+01-33     | Dagger
+34-54     | Shortsword
+55-63     | Quarterstaff
+64-71     | Sickle
+72-79     | Scythe
+80-87     | Light Hammer
+88-92     | Handaxe
+93-97     | Club
+98-100    | Lantern Staff
+
+
+LEGAL RANGED
+______________________________
+D100 roll | Weapon
+__________|___________________
+01-07     | Arrows, Longbow
+08-10     | Arrows, Shortbow
+11-16     | Bolts
+17-20     | Sling Bullets
+21-53     | Longbow
+54-68     | Light Crossbow
+69-88     | Shortbow
+89-93     | Sling
+94-98     | Throwing Axe
+99-100    | Javelin
+
+
+ILLEGAL
+______________________________
+D100 roll | Weapon
+__________|___________________
+01-20     | Longsword
+21-30     | Bastard Sword
+31-35     | Greatsword
+36-43     | Battleaxe
+44-45     | Waraxe, Dwarven
+46-49     | Greataxe
+50        | Axe, Butcher
+51-53     | Light Mace
+54-55     | Heavy Mace
+56-59     | Warhammer
+60        | Morningstar
+61-64     | Greatclub
+65        | Earth Breaker
+66-68     | Shortspear
+69-71     | Spear
+72-74     | Longspear
+75-76     | Halberd
+77-78     | Glaive-Guisarme
+79-80     | Ranseur
+81-82     | Longhammer, Dwarven
+83-87     | Rapier
+88-89     | Scimitar
+90        | Curve Blade, Elven
+91        | Falchion
+92-93     | Lance
+94        | Gauntlet
+95        | Spiked Gauntlet
+96        | Heavy Crossbow
+97        | Hand Crossbow
+98        | Light Flail
+99        | Heavy Flail
+100       | Whip
+
+
+UNCOMMON WEAPONS
+______________________________
+D100 roll | Weapon
+__________|___________________
+01-07     | Nunchaku
+08-12     | Meteor Hammer
+13-15     | Flying Talon
+16        | Kyoketsu Shoge
+17-19     | Punching Dagger
+20-21     | Siangham
+22-25     | Kama
+26-35     | Kukri
+36        | Terbutje
+37-40     | Spiked Chain
+41-43     | Bladed Scarf
+44        | Sai
+45-49     | Shuriken (2d12)
+50-51     | Blowgun
+52-56     | Chakram (1d3)
+57-65     | Sickle
+66-74     | Scythe
+75-79     | Lantern Staff
+80-84     | Net
+85-87     | Trident
+88        | Axe, Boarding
+89-91     | Pick, Light
+92-93     | Pick, Heavy
+94        | Pickaxe
+95-96     | Handaxe
+97        | Battleaxe
+98        | Machete
+99        | Dagger, Swordbreaker
+100       | Razor, Drow
+
+__________________________________________________________________________
+
+Regions & Settlements:
+
+CIVILIZED FARMING: Kinidzau, Cerell, Paperton, Pixton, Cynthif, Maebad
+CIVILIZED FISHING: Kairese, Chthorre, Atalan, Eastreach, Oceanside, Schistport, Deinara, Issan
+CIVILIZED FORESTED: Noirarciel, Gloomhame, Kryssia, Epi Oko
+CIVILIZED MINING: Salpolis, Highwatch, Tha'arnth
+CIVILIZED WARRING: Thorn City, Khalilia
+CIVILIZED OVERRUN: Ahgri
+
+ARCTIC FARMING: Murdune
+ARCTIC FISHING: Icehold
+
+SAVAGE FARMING: Rhyncia, Forcia
+SAVAGE WARRING: Great Fang, Gelmour
+
+TRACKLESS FARMING: Icarian Range, Skygarten
+TRACKLESS FORESTED: Mistvale
+TRACKLESS OVERRUN: Zoma Desert, Sandhome
+
+
+__________________________________________________________________________
+
+
+
+Terrain Qualities:
+
+------------------
+CIVILIZED [default]
+------------------
+	Standard weapon category probabilities:
+		(40% Legal, 30% Legal Ranged, 20% Illegal, 10% Uncommon)
+CIVILIZED
+D100 roll | Category
+__________|_______________________
+01-40     | 'Legal' Weapons
+41-70     | 'Legal' Ranged Weapons
+71-90     | 'Illegal' Weapons
+91-100    | Uncommon Weapons
+
+
+
+------------------
+ARCTIC
+------------------
+	Rearrange weapon category probabilities:
+		(30% Legal Ranged, 20% Legal, 35% Illegal, 15% Uncommon)
+ARCTIC
+D100 roll | Category
+__________|_______________________
+01-30     | 'Legal' Ranged Weapons
+31-50     | 'Legal' Weapons
+51-85     | 'Illegal' Weapons
+86-100    | Uncommon Weapons
+
+
+
+------------------
+SAVAGE
+------------------
+	Rearrange weapon category probabilities:
+		(40% Illegal, 30% Legal Ranged, 20% Legal, 10% Uncommon)
+SAVAGE
+D100 roll | Category
+__________|_______________________
+01-40     | 'Illegal' Weapons
+41-70     | 'Legal' Ranged Weapons
+71-90     | 'Legal' Weapons
+91-100    | Uncommon Weapons
+
+
+
+------------------
+TRACKLESS
+------------------
+	Rearrange weapon category probabilities:
+		(40% Legal Ranged, 30% Legal, 20% Illegal, 10% Uncommon)
+TRACKLESS
+D100 roll | Category
+__________|_______________________
+01-40     | 'Legal' Ranged Weapons
+41-70     | 'Legal' Weapons
+71-90     | 'Illegal' Weapons
+86-100    | Uncommon Weapons
+__________________________________________________________________________
+
+
+
+Economic Qualitites:
+	(never apply the following changes to uncommon weapons)
+
+------------------
+FARMING [default]
+------------------
+	no changes
+
+
+------------------
+FISHING
+------------------
+	Sickle becomes Net
+	Scythe --> Trident
+	Handaxe --> Axe, Boarding
+
+
+------------------
+FORESTED
+------------------
+	Sickle becomes Handaxe
+	Scythe --> Battleaxe
+	Handaxe --> Machete
+
+
+------------------
+MINING
+------------------
+	Sickle becomes Pick, Light
+	Scythe --> Pick, Heavy
+	Lantern Staff --> Pickaxe
+
+
+------------------
+WARRING
+------------------
+	Shortsword becomes Longsword
+	Sickle --> Shortsword
+	Scythe --> Lance
+	Light Hammer --> Warhammer
+	Handaxe --> Battleaxe
+	Club --> Greatclub
+	Lantern Staff --> Heavy Crossbow
+	Sling Bullets --> Chakram (1d3)
+	Sling --> Spear
+
+
+------------------
+OVERRUN
+------------------
+	Shortsword becomes Greatclub
+	Sickle --> Shortsword
+	Scythe --> Falchion
 
 
 
@@ -110,11 +366,11 @@ __________|___________________
 ==========================================================================================================================================
 WEAPONS
 [Kinidzau/Cerell - Chart as is]
-[Kairese/Chthorre/Atalan - Switch (Net & Trident) with (Sickle & Scythe)]
-[Saltopolis/Highwatch - Switch (Light & Heavy Pick) with (Sickle & Scythe)]
-[Thorn City - Switch (Longsword, Chakram, & Kukri) with (Shortsword)]
+[Kairese/Chthorre/Atalan - Switch (Sickle & Scythe) with (Net & Trident)]
+[Saltopolis/Highwatch - Switch (Sickle & Scythe) with (Light & Heavy Pick)]
+[Thorn City - Switch (Shortsword) with (Longsword, Chakram, & Kukri)]
 [Rhyncia/Icarian Range/Great Fang- Inverse weapon category probabilities. (40% Uncommon, 30% Illegal, 20% Ranged, 10% Legal)]
-[Desert/Gelmoor - Under Legal: (34% Scimitar, 8%s Sickle & Scythe -> Shortsword & Falchion); Illegal: (1% Falchion & Scimitar -> Sickle & Scythe)]
+[Desert(Zoma)/Gelmoor - Under Legal: (34% Scimitar, 8%s Sickle & Scythe -> Falchion); Illegal: (1% Falchion & Scimitar -> Sickle & Scythe)]
 [Moordune - Treat illegal weapons as extension of legal weapons, 50% per table.]
 __________________________________________________________________________________________________________________________________________
 D100 roll | Category
@@ -123,6 +379,15 @@ __________|_______________________
 41-70     | 'Legal' Ranged Weapons
 71-90     | 'Illegal' Weapons
 91-100    | Uncommon Weapons
+
+
+> Moordune
+D100 roll | Category
+__________|_______________________
+01-30     | 'Legal' Weapons
+31-50     | 'Legal' Ranged Weapons
+51-85     | 'Illegal' Weapons
+86-100    | Uncommon Weapons
 
 
 
